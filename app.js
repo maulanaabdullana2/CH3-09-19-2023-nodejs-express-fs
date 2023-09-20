@@ -14,7 +14,9 @@ app.use((req, res, next) => {
 
 const port = process.env.port || 3000
 
-//API TOURS
+//--------------------------------------------
+//                API TOURS
+//--------------------------------------------
 const tours = JSON.parse(
     fs.readFileSync(
         `${__dirname}/dev-data/data/tours-simple.json`
@@ -134,7 +136,9 @@ const deleteTour = (req, res) => {
     )
 }
 
-//API USERS
+//------------------------------------
+//              API USERS
+//------------------------------------
 const users = JSON.parse(
     fs.readFileSync(
         `${__dirname}/dev-data/data/users.json`
